@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choix couleurs</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Dela+Gothic+One&family=Edu+TAS+Beginner&family=Space+Mono&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="Container">
+    <div class="container">
+        <label for="hue-slider">Teinte :</label>
+        <input type="range"  class='range_css' id="hue-slider" min="0" max="360" value="178">
+        <span id="hue-value">0</span>
+        
+    </div>
+    <div class="container">
+        <label for="saturation-slider">Saturation :</label>
+        <input type="range" id="saturation-slider" min="0" max="100" value="100">
+        <span id="saturation-value">100</span>
+    </div>
+    <div class="container">
+        <label for="luminance-slider">Luminosité :</label>
+        <input type="range" id="luminance-slider" min="0" max="100" value="34">
+        <span id="luminance-value">34</span>
+    </div>
+    <div>
+        <p>Couleur : <span id="color-hsl">hsl(0, 100%, 34%)</span></p>
+    </div>    </main>
+
+
+    
+
+<script src="./Js/script.js"></script>
+</body>
+</html>
